@@ -1,0 +1,54 @@
+.nameText {
+    font-size: 70px;
+    font-weight: 800;
+    margin: auto;
+    color: #fff;
+    left: 35%;
+    top: 63%;
+  }
+  
+  .nameText::after {
+    content: "Hi";
+    opacity: 0;
+    animation: fadeInOut 6s linear forwards;
+  }
+  
+  @keyframes fadeInOut {
+    0%, 15% {
+      opacity: 0;
+    }
+  
+    20%, 35% {
+      content: "Hi";
+      opacity: 1;
+    }
+  
+    40%, 55% {
+      opacity: 0;
+    }
+  
+    60%, 75% {
+      content: "Welcome";
+      opacity: 1;
+    }
+  
+    80%, 95% {
+      opacity: 0;
+    }
+  
+    100% {
+      content: "It's Kamal Dhami";
+      opacity: 1;
+    }
+  }
+  
+
+  @media (orientation: portrait) {
+    .nameText {
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin: auto;
+      color: #fff;
+      top: 50%;
+    }
+  }

@@ -1,0 +1,31 @@
+.shared-class {
+    cursor: pointer;
+}
+
+.stack-iframe {
+    width: 25rem;
+    bottom: 100%;
+    height: 20rem;
+}
+
+.iframe-fix {
+    height: 100%;
+    width: 100%;
+    border: 1px solid black
+}
+
+
+@media (orientation:portrait) {
+    .iframe-fix {
+        height: 100;
+        width: 100%;
+        border: 1px solid black
+    }
+
+    .stack-iframe {
+        width: 20rem;
+        bottom: 100%;
+        height: 18rem;
+    }
+
+}
